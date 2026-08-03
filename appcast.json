@@ -4,7 +4,7 @@
     {
       "version": "0.2.0",
       "desc": "Add boundingBox support for Bob 1.20.0.",
-      "sha256": "d24dfc34dd52a85db1081346a46c9afb492ba4396a8a2b8eb6b9041cbe9090ae",
+      "sha256": "f03bb47f8197742bf2a64a73720cab259b79e5966eec3a92155e5ae2845afdca",
       "url": "https://github.com/tianruoyouxin/bob-plugin-wechat-ocr/releases/download/v0.2.0/bob-plugin-wechat-ocr-0.2.0.bobplugin",
       "minBobVersion": "1.20.0"
     }
