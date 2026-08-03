@@ -6,6 +6,10 @@ function supportLanguages() {
     return items.map(item => item[0]);
 }
 
+function supportBoundingBox() {
+    return true;
+}
+
 function ocr(query, completion) {
     var apiUrl = $option.apiUrl;
     if (!apiUrl) {
@@ -68,9 +72,20 @@ function ocr(query, completion) {
             if (data && data.result) {
                 if (data.result.errcode === 0 && data.result.ocr_response) {
                     var texts = data.result.ocr_response.map(function(item) {
-                        return {
+                        var result = {
                             text: item.text,
                         };
+                        if (query.pixelWidth && query.pixelHeight && typeof item.left === "number") {
+                            result.boundingBox = {
+                                points: [
+                                    { x: item.left / query.pixelWidth, y: item.top / query.pixelHeight },
+                                    { x: item.right / query.pixelWidth, y: item.top / query.pixelHeight },
+                                    { x: item.right / query.pixelWidth, y: item.bottom / query.pixelHeight },
+                                    { x: item.left / query.pixelWidth, y: item.bottom / query.pixelHeight }
+                                ]
+                            };
+                        }
+                        return result;
                     });
                     
                     completion({

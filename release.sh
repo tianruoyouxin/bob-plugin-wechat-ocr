@@ -6,7 +6,7 @@ echo $sha256_wechat_ocr
 
 download_link="https://github.com/missuo/bob-plugin-wechat-ocr/releases/download/v$version/bob-plugin-wechat-ocr-$version.bobplugin"
 
-new_version="{\"version\": \"$version\", \"desc\": \"Bump to $version.\", \"sha256\": \"$sha256_wechat_ocr\", \"url\": \"$download_link\", \"minBobVersion\": \"1.8.0\"}"
+new_version="{\"version\": \"$version\", \"desc\": \"Bump to $version.\", \"sha256\": \"$sha256_wechat_ocr\", \"url\": \"$download_link\", \"minBobVersion\": \"1.20.0\"}"
 
 json_file='appcast.json'
 json_data=$(cat $json_file)
