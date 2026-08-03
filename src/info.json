@@ -1,13 +1,13 @@
 {
   "identifier": "nz.owo.wechat.ocr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "category": "ocr",
   "name": "WeChat OCR",
   "summary": "WeChat powered OCR",
   "icon": "icon.png",
   "author": "Vincent Yang <me@owo.nz>",
   "homepage": "https://github.com/missuo/bob-plugin-wechat-ocr",
-  "appcast": "https://github.com/missuo/bob-plugin-wechat-ocr/raw/main/appcast.json",
+  "appcast": "https://github.com/tianruoyouxin/bob-plugin-wechat-ocr/raw/main/appcast.json",
   "minBobVersion": "1.20.0",
   "options": [
     {

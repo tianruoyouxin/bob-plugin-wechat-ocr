@@ -1,1 +1,19 @@
-{ "identifier": "nz.owo.wechat.ocr", "versions": [ { "version": "0.1.0", "desc": "Bump to 0.1.0.", "sha256": "4fcb9196d27d03c211af780d80c70b9c32e48028c0f0e4c57dfb87ebf440afb0", "url": "https://github.com/missuo/bob-plugin-wechat-ocr/releases/download/v0.1.0/bob-plugin-wechat-ocr-0.1.0.bobplugin", "minBobVersion": "1.20.0" } ] }
+{
+  "identifier": "nz.owo.wechat.ocr",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "desc": "Bump to 0.1.0.",
+      "sha256": "8117fc02b9932123788c02535bfa306fdba2b4be775b143bd1349669196d3049",
+      "url": "https://github.com/tianruoyouxin/bob-plugin-wechat-ocr/releases/download/v0.1.0/bob-plugin-wechat-ocr-0.1.0.bobplugin",
+      "minBobVersion": "1.20.0"
+    },
+    {
+      "version": "0.2.0",
+      "desc": "Add boundingBox support for Bob 1.20.0.",
+      "sha256": "d24dfc34dd52a85db1081346a46c9afb492ba4396a8a2b8eb6b9041cbe9090ae",
+      "url": "https://github.com/tianruoyouxin/bob-plugin-wechat-ocr/releases/download/v0.2.0/bob-plugin-wechat-ocr-0.2.0.bobplugin",
+      "minBobVersion": "1.20.0"
+    }
+  ]
+}
